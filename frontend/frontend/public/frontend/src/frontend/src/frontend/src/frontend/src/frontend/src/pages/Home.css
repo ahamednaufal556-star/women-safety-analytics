@@ -1,0 +1,123 @@
+.home-page {
+  padding: 2rem;
+}
+
+.three-d-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  perspective: 1000px;
+}
+
+.woman-3d {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.solution-box {
+  background-color: var(--secondary-bg);
+  border-left: 5px solid var(--accent-coral);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.solution-box h2 {
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.solution-box p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.features h2 {
+  text-align: center;
+  color: var(--accent-gold);
+  margin: 3rem 0 2rem;
+  font-size: 2.5rem;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--accent-coral) 0%, var(--accent-lavender) 100%);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 3rem 0;
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.cta-buttons .btn-primary {
+  background-color: var(--accent-gold);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.cta-buttons .btn-primary:hover {
+  background-color: var(--accent-warm);
+  transform: scale(1.05);
+}
+
+.cta-buttons .btn-secondary {
+  background-color: white;
+  color: var(--accent-gold);
+  border: 2px solid transparent;
+  font-weight: 600;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: var(--primary-bg);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .features h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .woman-3d {
+    max-width: 200px;
+  }
+}

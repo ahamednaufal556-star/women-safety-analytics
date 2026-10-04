@@ -1,0 +1,117 @@
+.dashboard-page h1 {
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.dashboard-page > p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.heatmap-container {
+  background-color: white;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.india-map {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  background: linear-gradient(135deg, rgba(232, 196, 160, 0.05), rgba(212, 197, 226, 0.05));
+  border-radius: 8px;
+}
+
+.hotspot-legend {
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  border-left: 5px solid var(--accent-warm);
+}
+
+.hotspot-legend h3 {
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+}
+
+.legend-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.legend-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.insights-box {
+  background-color: var(--secondary-bg);
+  border-left: 5px solid var(--accent-coral);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.insights-box h2 {
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+}
+
+.insights-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.insights-box li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--text-dark);
+  line-height: 1.6;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.insights-box li:last-child {
+  border-bottom: none;
+}
+
+.insights-box li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .dashboard-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .heatmap-container {
+    padding: 1rem;
+  }
+
+  .legend-items {
+    grid-template-columns: 1fr;
+  }
+
+  .india-map {
+    min-height: 300px;
+  }
+}

@@ -1,0 +1,171 @@
+.report-page h1 {
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.report-page > p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.report-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.form-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.safety-notice {
+  background-color: #FFF4E6;
+  border: 2px solid var(--accent-warm);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.safety-notice h3 {
+  color: var(--accent-warm);
+  margin-bottom: 0.5rem;
+}
+
+.safety-notice p {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.success-message {
+  background-color: #E8F5E9;
+  border: 2px solid #4CAF50;
+  color: #2E7D32;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.error-message {
+  background-color: #FFEBEE;
+  border: 2px solid #F44336;
+  color: #C62828;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-actions .btn {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.privacy-notice {
+  background-color: var(--secondary-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-gold);
+  margin-top: 2rem;
+}
+
+.privacy-notice p {
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: linear-gradient(135deg, var(--accent-coral) 0%, var(--accent-lavender) 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.info-card ol,
+.info-card ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.info-card li {
+  padding: 0.5rem 0;
+  opacity: 0.95;
+  line-height: 1.5;
+}
+
+.info-card p {
+  margin-bottom: 1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .report-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .report-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+
+  .info-section {
+    gap: 1rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+}
